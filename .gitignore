@@ -1,5 +1,6 @@
 .rcs
 *.log
+af-update-blog.sh
 wp-config.php
 wp-content/uploads/
 wp-content/blogs.dir/
