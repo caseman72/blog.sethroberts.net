@@ -2,9 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-$pwd = $_GET['pwd'] == '20130101' ? true : false;
-$dir = $_GET['dir'] == date('m') ? true : false;
-
+// pwd and dir
+$pwd = isset($_GET['pwd']) && $_GET['pwd'] == '20130101' ? true : false;
+$dir = isset($_GET['dir']) && $_GET['dir'] == date('m') ? true : false;
 
 // Get the directory to zip
 $directory = rtrim(dirname(__FILE__), '/ ') .'/wp-content/uploads';
@@ -18,8 +18,8 @@ if ($pwd && file_exists($directory)) {
 	$zip = Zip($directory, $tmp_zip);
 
 	// calc the length of the zip. it is needed for the progress bar of the browser
-	$filesize = filesize($tmp_zip);
-	if ($filesize) {
+	$filesize = @filesize($tmp_zip);
+	if ($filesize > 0) {
 		// we deliver a zip file
 		header('Content-Type: archive/zip');
 		header('Content-Disposition: attachment; filename=wp-content-uploads.'. time() . '.zip');
@@ -28,10 +28,11 @@ if ($pwd && file_exists($directory)) {
 		// deliver the zip file
 		$fp = fopen($tmp_zip,'r');
 		echo fpassthru($fp);
+
+		// clean up the tmp zip file
+		unlink($tmp_zip);
 	}
 
-	// clean up the tmp zip file
-	unlink($tmp_zip);
 }
 else {
 	print $directory . "\n";
