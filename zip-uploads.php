@@ -33,12 +33,12 @@ if ($pwd && file_exists($directory)) {
 		unlink($tmp_zip);
 	}
 	else {
-		print $directory . " - empty\n";
+		print "error\n$directory\n";
 	}
 
 }
 else {
-	print $directory . " - not found\n";
+	print "error\n$directory\n";
 }
 
 
