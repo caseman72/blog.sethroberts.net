@@ -2,3 +2,4 @@
 *.log
 af-update-blog.sh
 wp-config.php
+check-for-open.php
