@@ -149,4 +149,3 @@ if ( $compress && ! ini_get('zlib.output_compression') && 'ob_gzhandler' != ini_
 
 echo $out;
 exit;
-?>
