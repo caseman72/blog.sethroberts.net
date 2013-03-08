@@ -1,6 +1,10 @@
 <div id="sidebar-left">
 
-[paypal-donation]
+<?php
+$payPay = PayPalDonations::getInstance();
+echo $payPay->paypalShortcode();
+?>
+
 
 <div>
   <script language="javascript" src="http://cache.blogads.com/319864931/feed.js"></script><br/>
