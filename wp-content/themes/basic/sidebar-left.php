@@ -2,7 +2,10 @@
 
 [paypal-donation]
 
-<script language="javascript" src="http://cache.blogads.com/319864931/feed.js"></script><br/><a href=http://www.blogads.com>blog advertising</a> is good for you
+<div>
+  <script language="javascript" src="http://cache.blogads.com/319864931/feed.js"></script><br/>
+  <a href="http://www.blogads.com/">blog advertising</a> is good for you
+</div>
 
 <div id="booklist">
 <h2>I Recommend</h2>
