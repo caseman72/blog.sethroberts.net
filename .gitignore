@@ -3,4 +3,4 @@
 af-update-blog.sh
 wp-config.php
 check-for-open.php
-wp-content/plugins/w3-total-cache/w3-total-cache-config.php
+wp-content/w3tc-config/master.php
