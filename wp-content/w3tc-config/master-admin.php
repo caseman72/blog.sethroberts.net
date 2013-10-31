@@ -1,7 +1,7 @@
 <?php
 
 return array(
-	'version' => '0.9.2.11',
+	'version' => '0.9.3',
 	'browsercache.configuration_sealed' => false,
 	'cdn.configuration_sealed' => false,
 	'cloudflare.configuration_sealed' => false,
