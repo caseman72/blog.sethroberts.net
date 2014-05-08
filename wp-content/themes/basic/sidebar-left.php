@@ -1,4 +1,4 @@
-<div id="sidebar-left">
+<div id="sidebar-left" style="padding-top: 0px;">
 
 <div style="display: none;">
 	<div style="margin: 0 17px 20px 0; text-align: center;">
