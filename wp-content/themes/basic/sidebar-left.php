@@ -1,16 +1,18 @@
 <div id="sidebar-left">
 
-<div style="margin: 0 17px 20px 0; text-align: center;">
-<h2 style="margin: 10px 0;">Support This Blog</h2>
-<?php
-$payPay = PayPalDonations::getInstance();
-echo $payPay->paypalShortcode();
-?>
-</div>
+<div style="display: none;">
+	<div style="margin: 0 17px 20px 0; text-align: center;">
+	<h2 style="margin: 10px 0;">Support This Blog</h2>
+	<?php
+	$payPay = PayPalDonations::getInstance();
+	echo $payPay->paypalShortcode();
+	?>
+	</div>
 
-<div>
-  <script language="javascript" src="http://cache.blogads.com/319864931/feed.js"></script><br/>
-  <a href="http://www.blogads.com/">blog advertising</a> is good for you
+	<div>
+		<!-- script language="javascript" src="http://cache.blogads.com/319864931/feed.js"></script --><br/>
+		<a href="http://www.blogads.com/">blog advertising</a> is good for you
+	</div>
 </div>
 
 <div id="booklist">

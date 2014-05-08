@@ -14,7 +14,7 @@ google_color_link = "990000";
 google_color_text = "000000";
 google_color_url = "000000";
 //--></script>
-<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<!-- script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script -->
 </div>
 
   <ul>
