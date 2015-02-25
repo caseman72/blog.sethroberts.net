@@ -1,6 +1,6 @@
 .rcs
 *.log
-af-update-blog.sh
+af-*.sh
 wp-config.php
 check-for-open.php
 wp-content/w3tc-config/master.php
